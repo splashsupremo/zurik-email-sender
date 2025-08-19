@@ -73,7 +73,8 @@ try {
 
     $mail->isHTML(true);
     $mail->Subject = 'Verify your email';
-    $mail->Body    = "<p>Hello,</p><p>Click the link to verify your email:</p><p><a href='{$verification_link}'>Verify Email</a></p>";
+    $mail->Body    = "<p>Hello,</p><p>Your sign-up was successful. Please click the link below to verify your email address and continue your registration.
+:</p><p><a href='{$verification_link}'>Verify Email</a></p>";
     $mail->AltBody = "Open the link to verify: {$verification_link}";
 
     $mail->send();
